@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #00ff88;
+}
+
+.sub {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Inputs */
+input, button {
+  padding: 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input {
+  width: 240px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+/* Botões */
+button {
+  background-color: #00ff88;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00cc6a;
+}
+
+/* Lista */
+#listaTarefas {
+  list-style: none;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+#listaTarefas li {
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 6px solid #00ff88;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaTarefas button {
+  background-color: #ff4c4c;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+#listaTarefas button:hover {
+  background-color: #cc0000;
+}
+
+/* Logout */
+.logout {
+  margin-top: 20px;
+  background-color: #444;
+  color: #fff;
+}

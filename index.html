@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Área WADJ</title>
+
+  <link rel="icon" href="WADJ.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Área WADJ</h1>
+  <p class="sub">Controle total da sua rotina.</p>
+
+  <!-- LOGIN -->
+  <div id="loginDiv">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="login()">Entrar</button>
+    <button onclick="registrar()">Registrar</button>
+  </div>
+
+  <!-- APP -->
+  <div id="appDiv" style="display:none;">
+    <input id="tarefa" placeholder="Digite a tarefa..." />
+    <input id="data" type="date" />
+    <input type="time" id="horaTarefa" />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="listaTarefas"></ul>
+
+    <button onclick="logout()" class="logout">Sair</button>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
